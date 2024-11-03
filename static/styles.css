@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
     height: 100%;
     margin: 0;
   }
@@ -9,8 +9,30 @@ html, body {
   }
   
   main {
-    flex: 1; /* This will make the main content take up all available space */
-  }
+    flex: 1;
+    background-image: url('/images/image.png');
+  } */
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional styling */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    background-image: url('/images/image.png');
+    background-size: cover;          /* Make image cover the entire section */
+    background-repeat: no-repeat;     /* Prevent tiling */
+    background-position: center;      /* Center the background image */
+    background-attachment: fixed;     /* Keep the image fixed on scroll */
+    color: white;                     /* Text color for contrast */
+}
 
 
 

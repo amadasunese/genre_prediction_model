@@ -26,5 +26,8 @@ def recommend():
     
     return render_template('index.html', recommendation=f'Recommended Genre: {genre}')
 
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
