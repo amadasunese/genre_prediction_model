@@ -1,22 +1,7 @@
-/* html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  main {
-    flex: 1;
-    background-image: url('/images/image.png');
-  } */
-
   html, body {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif; /* Optional styling */
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -27,11 +12,11 @@ body {
 main {
     flex: 1;
     background-image: url('/images/image.png');
-    background-size: cover;          /* Make image cover the entire section */
-    background-repeat: no-repeat;     /* Prevent tiling */
-    background-position: center;      /* Center the background image */
-    background-attachment: fixed;     /* Keep the image fixed on scroll */
-    color: white;                     /* Text color for contrast */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
 
@@ -139,7 +124,7 @@ footer {
     color: #fff;
     padding: 15px 0;
     text-align: center;
-    flex-shrink: 0; /* Prevent the footer from shrinking */
+    flex-shrink: 0;
 }
 
 footer .social-icons a {
