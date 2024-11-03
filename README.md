@@ -24,6 +24,12 @@ The project requires Python and the following libraries:
 2. sklearn
 3. Jupyter Notebook (if you want to run the script in a Jupyter Notebook)
 
+## Deployment
+The model was deployed for testing. Click on the link below to try it out
+
+https://musicrecommend.pythonanywhere.com/
+
+
 
 ## Future Improvements
 The dataset used to train the model for this application has only 18 entries. For improve recommendation accuracy, add more demographic features. Also, training the model with a larger dataset ensure better accuracy.
