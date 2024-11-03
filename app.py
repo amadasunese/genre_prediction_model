@@ -4,7 +4,7 @@ import pickle
 app = Flask(__name__)
 
 # Load the trained model
-with open('music_model.pkl', 'rb') as model_file:
+with open('genre_prediction_model/music_model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 @app.route('/')
@@ -19,11 +19,11 @@ def contact():
 def recommend():
     age = int(request.form['age'])
     gender = int(request.form['gender'])
-    
+
     # Make a prediction
     prediction = model.predict([[age, gender]])
     genre = prediction[0]  # Directly use the prediction result as the genre
-    
+
     return render_template('index.html', recommendation=f'Recommended Genre: {genre}')
 
 
